@@ -1,0 +1,281 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+     <title>Hotel Taj & Reastraunt| Home :: Taj</title>
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8"/>
+    <meta name="keywords" content="Cookie Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design"/>
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- Custom Theme files -->
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="css/aos.css">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+    <!-- font-awesome icons -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- //Custom Theme files -->
+    <!-- online-fonts -->
+    <link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <!-- //online-fonts -->
+
+
+    <link href ="piugins/datepicker/datepicker3.css" rel="stylesheet" />
+
+    <link href ="bootstrap/css/font-awesome.min.css" rel="stylesheet"/>
+
+
+  
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+      
+         <!-- top header -->
+    <div class="header-top bg-theme">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="d-sm-flex header-w3_pvt">
+                        <li>
+                            <span class="fa fa-envelope-open"></span>
+                            <a href="mailto:example@email.com" class="text-white">Hotel@Taj.com</a>
+                        </li>
+                        <li>
+                            <span class="fa fa-phone"></span>
+                            <p class="d-inline text-white">+91 9001535885</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 hearder-right-w3_pvt">
+                    <ul class="d-sm-flex header-w3_pvt justify-content-lg-end">
+                        <li><button type="button" class="btn w3ls-btn d-block" data-toggle="modal" aria-pressed="false"
+                                data-target="#exampleModal1">
+                                <span class="fa fa-sign-in"></span>Register
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn w3ls-btn btn-2  d-block" data-toggle="modal" aria-pressed="false"
+                                data-target="#exampleModal">
+                                <span class="fa fa-lock"></span> Sign in
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //top header -->
+
+       <!-- banner -->
+    <div id="home">
+        <!-- header -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light"  data-aos="fade-down">
+                <h1>
+                    <a class="navbar-brand text-white" href="index.html" data-aos="zoom-in">
+                        Hotel
+                    </a>
+                </h1>
+                <button class="navbar-toggler ml-md-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-lg-auto text-center">
+                        <li class="nav-item active  mr-lg-3 mt-lg-0 mt-3" data-aos="zoom-in">
+                            <a class="nav-link" href="index.html">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item  mr-lg-3 mt-lg-0 mt-3" data-aos="zoom-in">
+                            <a class="nav-link scroll" href="#about">about</a>
+                        </li>
+                         <li class="nav-item  mr-lg-3 mt-lg-0 mt-3" data-aos="zoom-in">
+                            <a class="nav-link scroll" href="BookaRoom.aspx">Book</a>
+                        </li>
+                        <li class="nav-item dropdown mr-lg-3 mt-lg-0 mt-3" data-aos="zoom-in">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item scroll" href="#team">team</a>
+                                <a class="dropdown-item scroll" href="#services">services</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item scroll" href="#more">more</a>
+                                <a class="dropdown-item scroll" href="#posts">latest posts</a>
+                            </div>
+                        </li>
+                        <li class="nav-item  mt-lg-0 mt-3" data-aos="zoom-in">
+                            <a class="nav-link scroll" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- //header -->
+        <div class="callbacks_container">
+            <ul class="rslides" id="slider3">
+                <li class="banner banner1" style="background: url(../images/<%=a3%>) center no-repeat;">
+                    <div class="container">
+                        <div class="banner-text">
+                            <div class="slider-info">
+                                <span  data-aos="zoom-in"><%=a1%></span>
+                                <h3  data-aos="zoom-in"><%=a2%></h3>
+                                <a  data-aos="zoom-in" class="btn btn-primary mt-4 w3_pvt-link-bnr scroll bg-theme1" href="#about" role="button">View
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="banner banner2" style="background: url(../images/<%=a4%>) center no-repeat">
+                    <div class="container">
+                        <div class="banner-text">
+                            <div class="slider-info">
+                                <span data-aos="zoom-in"><%=a1 %></span>
+                                <h3 data-aos="zoom-in"><%=a2%></h3>
+                                <a data-aos="zoom-in" class="btn btn-primary mt-4 w3_pvt-link-bnr scroll bg-theme1" href="#about" role="button">View
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- //banner -->       
+        <div>
+          <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+            </div>
+    
+    </form>
+    < <!-- js -->
+    <script src="js/jquery-2.2.3.min.js"></script>
+
+    <!-- //js -->
+    <!-- script for password match -->
+    <script>
+        window.onload = function () {
+            document.getElementById("password1").onchange = validatePassword;
+            document.getElementById("password2").onchange = validatePassword;
+        }
+
+        function validatePassword() {
+            var pass2 = document.getElementById("password2").value;
+            var pass1 = document.getElementById("password1").value;
+            if (pass1 != pass2)
+                document.getElementById("password2").setCustomValidity("Passwords Don't Match");
+            else
+                document.getElementById("password2").setCustomValidity('');
+            //empty string means no validation error
+        }
+    </script>
+    <!-- script for password match -->
+    <!-- Banner  Responsiveslides -->
+    <script src="js/responsiveslides.min.js"></script>
+      <script src="plugins/datepicker/bootstrap-datepicker.js"></script>
+
+    <script>
+
+
+        var today;
+        today = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
+
+        $('.datepicker').datepicker({
+            autoclose: true,
+            format: 'dd/mm/yyyy',
+            minDate: today,
+            daysOfWeekDisabled: [0]
+        })
+
+
+
+    </script>
+    <script>
+        // You can also use"$(window).load(function() {"
+        $(function () {
+            // Slideshow 4
+            $("#slider3").responsiveSlides({
+                auto: true,
+                pager: true,
+                nav: false,
+                speed: 500,
+                namespace: "callbacks",
+                before: function () {
+                    $('.events').append("<li>before event fired.</li>");
+                },
+                after: function () {
+                    $('.events').append("<li>after event fired.</li>");
+                }
+            });
+
+        });
+    </script>
+    <!-- //Banner  Responsiveslides -->
+    <script src='js/aos.js'></script>
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 1000
+        });
+    </script>
+
+    <!-- start-smooth-scrolling -->
+    <script src="js/move-top.js"></script>
+    <script src="js/easing.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+    </script>
+    <!-- //end-smooth-scrolling -->
+    <!-- smooth-scrolling-of-move-up -->
+    <script>
+        $(document).ready(function () {
+            /*
+            var defaults = {
+                containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear' 
+            };
+            */
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+    </script>
+    <script src="js/SmoothScroll.min.js"></script>
+    <!-- //smooth-scrolling-of-move-up -->
+    <script src="js/counter.js"></script>
+    <!-- //stats -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
